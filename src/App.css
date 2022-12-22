@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+.App {
+  text-align: center;
+}
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+img {
+  height: 100%;
+}
+p {
+  font-size: 1rem;
+  color: white;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: center;
+}
+.card {
+  background-color: transparent !important;
+}
+
+#root {
+  background-image: url('music1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+.card {
+  background-color: #1a1a1a;
+  color: white;
+  /* box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.5); */
+}
+
+.btn-summary {
+  margin: 10px;
+}
+
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+}
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 11px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+input[type='text'] {
+  background-color: #f1f1f1;
+  width: 40vw;
+}
+input:focus {
+  border: 1px solid #17a2b8;
+}
+.input-group {
+  margin-top: 3rem;
+  justify-content: center;
+}
+.lyrics-btn {
+  width: 60%;
+}
+
+.react-autosuggest__container {
+  position: relative;
+}
+
+.react-autosuggest__input--focused {
+  outline: none;
+}
+
+.react-autosuggest__input--open {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.react-autosuggest__suggestions-container {
+  display: none;
+}
+
+.react-autosuggest__suggestions-container--open {
+  display: block;
+  position: absolute;
+  top: 51px;
+  width: 40vw;
+  background-color: #17a2b8;
+  opacity: 0.9;
+  font-weight: 300;
+  font-size: 16px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 2;
+}
+
+.react-autosuggest__suggestions-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.react-autosuggest__suggestion {
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.react-autosuggest__suggestion--highlighted {
+  background-color: #138496;
+}
+@media only screen and (max-width: 500px) {
+  input[type='text'] {
+  
+    width: 60vw;
+}
+.react-autosuggest__suggestions-container--open{
+  width: 60vw;
+}
+}
